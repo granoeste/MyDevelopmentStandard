@@ -3,7 +3,7 @@
 ## 1. 通信方式
 
 - クライアントとAPIサーバーは、HTTP/1.1で通信する。
-- HTTPS必須。但し開発環境の場合に限りHTTPを許可。
+- HTTPS必須。但し開発環境の場合に限りHTTPを許可。
 
 - 1つのリクエストには、1つのレスポンスを返却するプル型とする。
 - CometやServer-Sent Events のようにサーバー側からデータをプッシュしない。
@@ -232,27 +232,27 @@ URLのベースパスにバージョンを指定する
 ### 2-5. リソースパス
 
 - リソース名の名詞を使用する
-    - **NG**: [GET] /getUsers
+    - NG: [GET] /getUsers
     - **OK**: [GET] /users
 - リソースへアクセスはパスをを使用する
-    - **NG**: [GET] /getUser?userId=3
+    - NG: [GET] /getUser?userId=3
     - **OK**: [GET] /user/3
 - スネークケースを使用する
-    - **NG**: [GET] /userTimeline
-    - **OK**: [GET] /user_timeline
+    - NG: [GET] /userTimeline
+    - **OK**: [GET] /user_timeline
 - 入れ子になったリソースを使用する
-    - **NG**: [POST] /user/photo?userId=3
+    - NG: [POST] /user/photo?userId=3
     - **OK**: [POST] /user/3/photo
 
-※リソースの拡張子(例:/users.json)など、プラットフォーム/フレームワークの固有のルールには柔軟に一貫性を持って対応する
+※リソースの拡張子(例:/users.json)など、プラットフォーム/フレームワークの固有のルールには柔軟に一貫性を持って対応する
 
 ### 2-6. パラメータ
 
 - スネークケースを使用する
-    - **NG**: [GET] /userTimeline?createdAt=2016-07-11T20:36:56+09:00
+    - NG: [GET] /userTimeline?createdAt=2016-07-11T20:36:56+09:00
     - **OK**: [GET] /user_timeline?created?at=2016-07-11T20:36:56+09:00
 - ページングはパラメータを使用する
-    - **NG**: [GET] /user_timeline/page/1
+    - NG: [GET] /user_timeline/page/1
     - **OK**: [GET] /user_timeline?page=1
 
 #### *APIパス参考*
@@ -261,11 +261,11 @@ URLのベースパスにバージョンを指定する
 | -------- | ---------------------------- | ------------------- |
 | [POST]   | /user                        | ユーザーを追加        |
 | [PUT]    | /user                        | ユーザーを更新        |
-| [GET]    | /user/{userId}               | ユーザーを取得        |
-| [DELETE] | /user/{userId}               | ユーザーを削除        |
+| [GET]    | /user/{userId}               | ユーザーを取得        |
+| [DELETE] | /user/{userId}               | ユーザーを削除        |
 | [POST]   | /user/{userId}/photo         | ユーザーのフォトを追加 |
-| [GET]    | /user/{userId}/friends       | ユーザーの友人を取得   |
-| [GET]    | /user/search?birthday={date} | ユーザーを誕生日で検索 |
+| [GET]    | /user/{userId}/friends       | ユーザーの友人を取得   |
+| [GET]    | /user/search?birthday={date} | ユーザーを誕生日で検索 |
 
 
 ## 3. HTTP レスポンス
@@ -289,8 +289,8 @@ APIでは、以下のステータスを使用する。
 | 404    | Not Found | 未検出。対象のデータが存在しない。|
 | 500    | Internal Server Error | サーバ内部エラー。サーバ内部にエラーが発生した。|
 
-これら以外の ステータスを使用する場合には、
-[HTTPステータスコード](https://ja.wikipedia.org/wiki/HTTP%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%89) を参考にして設計を行う。
+これら以外の ステータスを使用する場合には、
+[HTTPステータスコード](https://ja.wikipedia.org/wiki/HTTP%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%89) を参考にして設計を行う。
 
 ## 4. データ型とフォーマット
 
@@ -366,7 +366,7 @@ API内部でエラーが発生した場合に、Status 4xx を設定し、Body�
 |code | 文字列 | エラーコード |
 |message | 文字列 | エラーメッセージ |
 
-サンプル
+サンプル
 - 401 Unauthorized 
 
     ```
