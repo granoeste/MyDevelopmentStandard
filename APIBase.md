@@ -21,7 +21,7 @@ HTTPヘッダーには共通項目として以下の項目をからず付与す�
 | ヘッダーキー    | 必須 | 値/説明 |
 | ------------- |:---:| ---------------- |
 | Host          |  O  | 接続先ホスト名 |
-| User-agent    |  O  | アプリカスタム。**2-3. User-Agent参照**  ※iOS NSURLConnection のデフォルトは URLCache/1.0 CFNetwork/672.0.8 Darwin/14.0.0 |
+| User-agent    |  O  | アプリカスタム。**2-3. User-Agent参照**  ※iOS NSURLConnection のデフォルトは URLCache/1.0 CFNetwork/672.0.8 Darwin/14.0.0 |
 | Content-Type  |  O  | application/json |
 | Accept-Charset|  O  | utf-8 |
 | Cookie        |  O  | APIサーバーから発行されたCookieの内容をそのまま全て設定する。アクセストークンもCookieに含まれる。|
@@ -223,7 +223,7 @@ POST /user
 
 ### 2-4. APIのバージョン
 
-URLのベースパスにバージョンを指定する
+URLのベースパスにバージョンを指定する
 
 ```
 /api/v1/products
@@ -244,7 +244,7 @@ URLのベースパスにバージョンを指定する
     - NG: [POST] /user/photo?userId=3
     - **OK**: [POST] /user/3/photo
 
-※リソースの拡張子(例:/users.json)など、プラットフォーム/フレームワークの固有のルールには柔軟に一貫性を持って対応する
+※リソースの拡張子(例:/users.json)など、プラットフォーム/フレームワークの固有のルールには柔軟に一貫性を持って対応する
 
 ### 2-6. パラメータ
 
