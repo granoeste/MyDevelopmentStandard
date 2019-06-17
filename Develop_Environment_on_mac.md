@@ -113,27 +113,26 @@ Java, Android, iOS, Flutter, fastlane, git, GitHub, Python, Node.js, AWS, Fireba
     
     Install 
     ```
-    $ brew cask install java8
+    $ brew cask install adoptopenjdk8
     ```
 
     Check
     ```
     $ java -version
-    java version "1.8.0_181"
-    Java(TM) SE Runtime Environment (build 1.8.0_181-b13)
-    Java HotSpot(TM) 64-Bit Server VM (build 25.181-b13, mixed mode)
+    openjdk version "1.8.0_212"
+    OpenJDK Runtime Environment (AdoptOpenJDK)(build 1.8.0_212-b03)
+    OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.212-b03, mixed mode)
     ```
 
-10. Android SDK
+10. Android Studio
 
-    Download SDK from "[Android Developers](https://developer.android.com/studio/#downloads)"
+    [Download Android Studio and SDK tools](https://developer.android.com/studio/)
+    
+    Install Android Studio
 
-    Unzip and add path
+    Add path
     ```
-    $ mkdir android
-    $ cd android
-    $ unzip ~/Downloads/sdk-tools-darwin-4333796.zip
-    $ echo 'export ANDROID_HOME=$HOME/android' >> ~/.bash_profile
+    $ echo 'export ANDROID_HOME=$HOME/Library/Android/sdk' >> ~/.bash_profile
     $ echo 'export PATH=$ANDROID_HOME/tools:$PATH' >> ~/.bash_profile
     $ echo 'export PATH=$ANDROID_HOME/tools/bin:$PATH' >> ~/.bash_profile
     $ echo 'export PATH=$ANDROID_HOME/platform-tools/:$PATH' >> ~/.bash_profile
