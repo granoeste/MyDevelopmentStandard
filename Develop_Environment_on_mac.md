@@ -467,3 +467,10 @@ Java, Android, iOS, Flutter, fastlane, git, GitHub, Python, Node.js, AWS, Fireba
 
     Firebase Functions support Node.js 8 and 6 runtime only.
 
+18. jq
+
+    Install
+    ```
+    $ brew install jq
+    ```
+
