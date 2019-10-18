@@ -474,3 +474,14 @@ Java, Android, iOS, Flutter, fastlane, git, GitHub, Python, Node.js, AWS, Fireba
     $ brew install jq
     ```
 
+19. Vagrant
+
+    VirtualBox Install
+    ```
+    $ brew cask install virtualbox
+    ```
+
+    vagrant
+    ```
+    $ brew cask install vagrant
+    ```
