@@ -485,3 +485,72 @@ Java, Android, iOS, Flutter, fastlane, git, GitHub, Python, Node.js, AWS, Fireba
     ```
     $ brew cask install vagrant
     ```
+
+20. Ruby
+    Install rbenv  
+    ```
+    $ brew install rbenv ruby-build rbenv-communal-gems
+    ```
+
+    Edit .bash_profile
+    ```
+    export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+    if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+    export PATH="$HOME/.rbenv/bin:$PATH"
+    eval "$(rbenv init -)"
+    ```
+
+    Check
+    ```
+    $ rbenv -v
+    rbenv 1.1.2
+
+    $ rbenv versions
+    * system (set by /Users/katsumi.onishi/.rbenv/version)
+    
+    $ ruby -v
+    ruby 2.3.7p456 (2018-03-28 revision 63024) [universal.x86_64-darwin18]
+    ```
+
+    Install 2.5.3
+    ```
+    $ rbenv install 2.5.3
+
+    $ rbenv versions
+    * system (set by /Users/katsumi.onishi/.rbenv/version)
+    2.5.3
+    ```
+
+    Chenge version
+    ```
+    $ rbenv local 2.5.3
+
+    $ rbenv versions
+    system
+    * 2.5.3 (set by /Users/katsumi.onishi/Develop/Biz/techcon_app/app/ios/.ruby-version)
+    ```
+
+    Install bundler
+    ```
+    $ rbenv exec gem install bundler
+    
+    $ rbenv exec bundle -v
+    Bundler version 2.1.4
+    ```
+
+    Install Gems
+    ```
+    $ rbenv exec bundle install
+    ```
+    
+    Install fastlane
+    ```
+    $ rbenv exec gem install fastlane
+
+    $ rbenv exec  fastlane --version
+    fastlane installation at path:
+    /Users/katsumi.onishi/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/fastlane-2.141.0/bin/fastlane
+    -----------------------------
+    [✔] 🚀
+    fastlane 2.141.0
+    ```
