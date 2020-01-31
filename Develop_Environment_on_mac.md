@@ -486,7 +486,7 @@ Java, Android, iOS, Flutter, fastlane, git, GitHub, Python, Node.js, AWS, Fireba
     $ brew cask install vagrant
     ```
 
-20. Ruby
+20. Ruby with rbenv
     Install rbenv  
     ```
     $ brew install rbenv ruby-build rbenv-communal-gems
@@ -497,7 +497,6 @@ Java, Android, iOS, Flutter, fastlane, git, GitHub, Python, Node.js, AWS, Fireba
     export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
     if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
     export PATH="$HOME/.rbenv/bin:$PATH"
-    eval "$(rbenv init -)"
     ```
 
     Check
