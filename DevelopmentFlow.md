@@ -206,23 +206,23 @@ master から適宜タグを作成します。お客様へのベータリリー�
   ```
 
 #### (参考)
-- 開発フロー研修 @ Wantedly - Qiita http://qiita.com/awakia/items/c571e93e96a1ec28044f#_reference-fc25210dd2295431b965
-- GitHub「完璧なプルリクの書き方を教えるぜ」 - Qiita http://qiita.com/umanoda/items/93aec41213f8e3ce14c8
-- GitHub flowを用いた開発フロー - Qiita http://qiita.com/ryotakodaira/items/e860396ae44942dcca5e
-- 開発者のタスク管理をGitHubで行ったらうまくいった話 ｜ Developers.IO http://dev.classmethod.jp/tool/git/github-issue-driven-dev/
+- [開発フロー研修 @ Wantedly - Qiita](http://qiita.com/awakia/items/c571e93e96a1ec28044f#_reference-fc25210dd2295431b965)
+- [GitHub「完璧なプルリクの書き方を教えるぜ」 - Qiita](http://qiita.com/umanoda/items/93aec41213f8e3ce14c8)
+- [GitHub flowを用いた開発フロー - Qiita](http://qiita.com/ryotakodaira/items/e860396ae44942dcca5e)
+- [開発者のタスク管理をGitHubで行ったらうまくいった話 ｜ Developers.IO](http://dev.classmethod.jp/tool/git/github-issue-driven-dev/)
 
+- [Do Not Merge WIP for GitHub - Chrome ウェブストア](https://chrome.google.com/webstore/detail/do-not-merge-wip-for-gith/nimelepbpejjlbmoobocpfnjhihnpked)
 
-- Do Not Merge WIP for GitHub - Chrome ウェブストア https://chrome.google.com/webstore/detail/do-not-merge-wip-for-gith/nimelepbpejjlbmoobocpfnjhihnpked
+- [GitHub Flow – Scott Chacon](http://scottchacon.com/2011/08/31/github-flow.html)
+- [GitHub Flow (Japanese translation)](https://gist.github.com/Gab-km/3705015)
+- [プルリクエスト](https://www.atlassian.com/ja/git/workflows#!pull-request)
 
-- GitHub Flow – Scott Chacon http://scottchacon.com/2011/08/31/github-flow.html
-- GitHub Flow (Japanese translation) https://gist.github.com/Gab-km/3705015
-- プルリクエスト https://www.atlassian.com/ja/git/workflows#!pull-request
+- [ブランチとは | サルでもわかるGit入門](http://www.backlog.jp/git-guide/stepup/stepup1_1.html)
+- [プルリクエストとは？ | サルでもわかるGit入門](http://www.backlog.jp/git-guide/pull-request/pull-request1_1.html)
 
-- ブランチとは | サルでもわかるGit入門 http://www.backlog.jp/git-guide/stepup/stepup1_1.html
-- プルリクエストとは？ | サルでもわかるGit入門 http://www.backlog.jp/git-guide/pull-request/pull-request1_1.html
+- [Git - 初めてコードレビューされる人のためのpull requestとcommitの作り方 - Qiita](http://qiita.com/reikubonaga/items/e3b3b19c14d4ef4efb95)
+- [Pull Request のフォーマットを決めるとレビューの効率が3倍よくなる :: Crocos Engineering Blog](http://engineering.crocos.jp/post/98455177675/pull-request-%E3%81%AE%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%82%92%E6%B1%BA%E3%82%81%E3%82%8B%E3%81%A8%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC%E3%81%AE%E5%8A%B9%E7%8E%87%E3%81%8C3%E5%80%8D%E3%82%88%E3%81%8F%E3%81%AA%E3%82%8B)
 
-- Git - 初めてコードレビューされる人のためのpull requestとcommitの作り方 - Qiita http://qiita.com/reikubonaga/items/e3b3b19c14d4ef4efb95
-- Pull Request のフォーマットを決めるとレビューの効率が3倍よくなる :: Crocos Engineering Blog http://engineering.crocos.jp/post/98455177675/pull-request-%E3%81%AE%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%82%92%E6%B1%BA%E3%82%81%E3%82%8B%E3%81%A8%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC%E3%81%AE%E5%8A%B9%E7%8E%87%E3%81%8C3%E5%80%8D%E3%82%88%E3%81%8F%E3%81%AA%E3%82%8B
 
 **マージ後の削除されていないブランチ一覧抽出するコマンド**
 ```
