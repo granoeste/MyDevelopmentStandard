@@ -11,14 +11,15 @@ Java, Android, iOS, Flutter, fastlane, git, GitHub, Python, Node.js, AWS, Fireba
 
     Check
     ```
-    $ brew -v
-    Homebrew 1.7.2
-    Homebrew/homebrew-core (git revision 9b5d; last commit 2018-08-28)
+    brew -v
     ```
+    > Homebrew 1.7.2
+    > Homebrew/homebrew-core (git revision 9b5d; last commit 2018-08-28)
+  
     ```
-    $ xcode-select -v
-    xcode-select version 2349.
+    xcode-select -v
     ```
+    > xcode-select version 2349.
 
     ref. [macOS 用パッケージマネージャー — macOS 用パッケージマネージャー](https://brew.sh/index_ja)
 
@@ -26,36 +27,37 @@ Java, Android, iOS, Flutter, fastlane, git, GitHub, Python, Node.js, AWS, Fireba
 
     Install
     ```
-    $ sudo gem install bundler
+    sudo gem install bundler
     ```
 
     Check
     ```
-    $ bundler -v
-    Bundler version 1.16.4
+    bundler -v
     ```
+    > Bundler version 1.16.4
 
 3. fastlane 
 
     Install
     ```
-    $ brew cask install fastlane
+    brew install fastlane
     ```
 
     Add path
     ```
-    $ echo 'export PATH=$HOME/.fastlane/bin:$PATH' >> ~/.bash_profile
+    echo 'export PATH=$HOME/.fastlane/bin:$PATH' >> ~/.bash_profile
     ```
 
     Check
     ```
-    $ fastlane --version
-    fastlane installation at path:
-    /Library/Ruby/Gems/2.3.0/gems/fastlane-2.102.0/bin/fastlane
-    -----------------------------
-    [✔] 🚀
-    fastlane 2.102.0
+    fastlane --version
     ```
+    
+    > fastlane installation at path:
+    > /Library/Ruby/Gems/2.3.0/gems/fastlane-2.102.0/bin/fastlane
+    > -----------------------------
+    > [✔] 🚀
+    > fastlane 2.102.0
 
     ref. [fastlane docs](https://docs.fastlane.tools/)
 
@@ -63,27 +65,27 @@ Java, Android, iOS, Flutter, fastlane, git, GitHub, Python, Node.js, AWS, Fireba
 
     Install
     ```
-    $ sudo gem install dotenv
+    sudo gem install dotenv
     ```
 
 5. git (*Option)
 
     Check preinstall version
     ```
-    $ git --version
-    git version 2.15.1 (Apple Git-101)
+    git --version
     ```
+    > git version 2.15.1 (Apple Git-101)
 
     Install 
     ```
-    $ brew install git
+    brew install git
     ```
 
     Check
     ```
-    $ git --version
-    git version 2.18.0
+    git --version
     ```
+    > git version 2.18.0
 
 6. Install xcode
 
@@ -91,7 +93,7 @@ Java, Android, iOS, Flutter, fastlane, git, GitHub, Python, Node.js, AWS, Fireba
 
     Install 
     ```
-    brew install --HEAD libimobiledevice
+    brew install libimobiledevice
     brew install ideviceinstaller
     brew install ios-deploy
     ```
@@ -108,12 +110,12 @@ Java, Android, iOS, Flutter, fastlane, git, GitHub, Python, Node.js, AWS, Fireba
     
     Prepare
     ```
-    $ brew tap caskroom/versions
+    brew tap caskroom/versions
     ```
     
     Install 
     ```
-    $ brew cask install adoptopenjdk8
+    brew install --cask adoptopenjdk8  
     ```
 
     Check
@@ -132,25 +134,24 @@ Java, Android, iOS, Flutter, fastlane, git, GitHub, Python, Node.js, AWS, Fireba
 
     Add path
     ```
-    $ echo 'export ANDROID_HOME=$HOME/Library/Android/sdk' >> ~/.bash_profile
-    $ echo 'export PATH=$ANDROID_HOME/tools:$PATH' >> ~/.bash_profile
-    $ echo 'export PATH=$ANDROID_HOME/tools/bin:$PATH' >> ~/.bash_profile
-    $ echo 'export PATH=$ANDROID_HOME/platform-tools/:$PATH' >> ~/.bash_profile
+    echo 'export ANDROID_HOME=$HOME/Library/Android/sdk' >> ~/.bash_profile
+    echo 'export PATH=$ANDROID_HOME/tools:$PATH' >> ~/.bash_profile
+    echo 'export PATH=$ANDROID_HOME/tools/bin:$PATH' >> ~/.bash_profile
+    echo 'export PATH=$ANDROID_HOME/platform-tools/:$PATH' >> ~/.bash_profile
     ```
 
     Install package with [sdkmanager](https://developer.android.com/studio/command-line/sdkmanager)
     ```
-    $ sdkmanager --list
+    sdkmanager --list
     ```
 
     Install packages
     ```
-    $ sdkmanager --install build-tools;28.0.2
-    $ sdkmanager --install platform-tools
-    $ sdkmanager --install platforms;android-28   
-    $ sdkmanager --install emulator
-    $ sdkmanager --install system-images;android-28;default;x86_64
-    
+    sdkmanager --install build-tools;28.0.2
+    sdkmanager --install platform-tools
+    sdkmanager --install platforms;android-28   
+    sdkmanager --install emulator
+    sdkmanager --install system-images;android-28;default;x86_64
     ```
     *Install other necessary packages.
 
@@ -158,17 +159,21 @@ Java, Android, iOS, Flutter, fastlane, git, GitHub, Python, Node.js, AWS, Fireba
 
     Download
     ```
-    git clone -b beta https://github.com/flutter/flutter.git
+    cd ~/Library
+    git clone -b stable https://github.com/flutter/flutter.git
     ```
     
     Add path
     ```
-    $ echo 'export PATH=$HOME/flutter/bin:$PATH' >> ~/.bash_profile
+    echo 'export PATH=$HOME/Library/flutter/bin:$PATH' >> ~/.bash_profile
     ```
 
     Check
     ```
-    $ flutter doctor -v
+    flutter doctor -v
+    ```
+    
+    ```
     [✓] Flutter (Channel beta, v0.6.0, on Mac OS X 10.13.6 17G65, locale ja-JP)
         • Flutter version 0.6.0 at /Users/oonishi.k/flutter
         • Framework revision 9299c02cf7 (2 weeks ago), 2018-08-16 00:35:12 +0200
@@ -205,14 +210,14 @@ Java, Android, iOS, Flutter, fastlane, git, GitHub, Python, Node.js, AWS, Fireba
 
     1. Create key pair for GitHub. (No passphrase)
         ```
-        $ ssh-keygen -t ed25519 -N "" -f ~/.ssh/github -C foobar@example.com
+        ssh-keygen -t ed25519 -N "" -f ~/.ssh/github -C foobar@example.com
         ```
 
     2. Register public key to GitHub
 
         Take public key to clipboard
         ```
-        $ pbcopy < ~/.ssh/github.pub
+        pbcopy < ~/.ssh/github.pub
         ```
 
         Register public key on GitHub
@@ -222,7 +227,9 @@ Java, Android, iOS, Flutter, fastlane, git, GitHub, Python, Node.js, AWS, Fireba
     3. Edit ~/.ssh/config
 
         ```
-        $ vim ~/.ssh/config
+        vim ~/.ssh/config
+        ```
+        ```
         Host *
             StrictHostKeyChecking no
             UserKnownHostsFile=/dev/null
@@ -254,7 +261,9 @@ Java, Android, iOS, Flutter, fastlane, git, GitHub, Python, Node.js, AWS, Fireba
 
     4. Check
         ```
-        $ ssh -T github.com
+        ssh -T github.com
+        ```
+        ```
         Hi foobar! You've successfully authenticated, but GitHub does not provide shell access.
         ```
 
@@ -266,67 +275,67 @@ Java, Android, iOS, Flutter, fastlane, git, GitHub, Python, Node.js, AWS, Fireba
 
         Install
         ```
-        $ brew install nodebrew
+        brew install nodebrew
         ```
 
         Check
         ```
-        $ nodebrew -v
+        nodebrew -v
         ```
 
         Post Proccess
         ```
-        $ /usr/local/opt/nodebrew/bin/nodebrew setup_dirs
+        /usr/local/opt/nodebrew/bin/nodebrew setup_dirs
         ```
 
         Add Path
         ```
-        $ echo 'export PATH=$PATH:$HOME/.nodebrew/current/bin' >> ~/.bash_profile
+        echo 'export PATH=$PATH:$HOME/.nodebrew/current/bin' >> ~/.bash_profile
         ```
 
     2. Node.js
 
         Install
         ```
-        $ nodebrew install-binary latest
+        nodebrew install-binary latest
         ```
 
         Check installed versions
         ```
-        $ nodebrew list
+        nodebrew list
         ```
 
-        Enable version
+        Enable version  (*Option)
         ```
-        $ nodebrew use v10.10.0
+        nodebrew use v10.10.0
         ```
 
         Check node and npm
         ```
-        $ node -v
+        node -v
         ```
         ```
-        $ npm -v 
+        npm -v 
         ```
 
     3. nodenv  (*Option)
 
         Install
         ```
-        $ brew install nodenv
-        $ nodenv init
+        brew install nodenv
+        nodenv init
         ```
 
         Initialize nodenv using bash_profile
         ```
-        $ echo 'eval "$(nodenv init -)"' >> ~/.bash_profile
+        echo 'eval "$(nodenv init -)"' >> ~/.bash_profile
         ```
 
         Install 8.11.4 and use it
         ```
-        $ nodenv install 8.11.4
+        nodenv install 8.11.4
 
-        $ nodenv local 8.11.4
+        nodenv local 8.11.4
 
         $ nodenv versions
         system
@@ -341,34 +350,35 @@ Java, Android, iOS, Flutter, fastlane, git, GitHub, Python, Node.js, AWS, Fireba
 
         Check
         ```
-        $ python --version
-        Python 2.7.15
+        python --version
         ```
-
+        > Python 2.7.15
+  
     2. pip 
 
         Check
         ```
-        $ pip --version
-        pip 18.0 from /usr/local/lib/python2.7/site-packages/pip (python 2.7)
+        pip --version
         ```
+        > pip 18.0 from /usr/local/lib/python2.7/site-packages/pip (python 2.7)
+        
 
     3. PyEnv (*Option)
 
         Install
         ```
-        $ brew install pyenv
+        brew install pyenv
         ```
 
         Check
         ```
-        $ pyenv --version
-        pyenv 1.2.7
+        pyenv --version
         ```
-
+        > pyenv 1.2.7
+        
         Initialize pyenv using bash_profile
         ```
-        $ echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi\nexport PATH="~/.pyenv/bin:$PATH"' >> ~/.bash_profile
+        echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi\nexport PATH="~/.pyenv/bin:$PATH"' >> ~/.bash_profile
         ```
 
         Install Python 2.7.15 and use it
@@ -430,14 +440,14 @@ Java, Android, iOS, Flutter, fastlane, git, GitHub, Python, Node.js, AWS, Fireba
 
     ref. [awslabs/aws\-sam\-cli: AWS SAM CLI 🐿 is a CLI tool for local development and testing of Serverless applications](https://github.com/awslabs/aws-sam-cli)
 
-16. Docker
+16. ~~Docker Desktop~~
 
     [Install Docker for Mac \| Docker Documentation](https://docs.docker.com/docker-for-mac/install/)
 
 
     Verify
     ```
-    $ docker --version
+    docker --version
     Docker version 18.06.1-ce, build e68fc7a
 
     $ docker-compose --version
@@ -448,18 +458,33 @@ Java, Android, iOS, Flutter, fastlane, git, GitHub, Python, Node.js, AWS, Fireba
     ```
 
     ref. [Docker for Macをインストールしてみた](https://qiita.com/scrummasudar/items/750aa52f4e0e747eed68)
+    
+    
+16. Docker CLI
+
+    Install docker and docker-machine
+    ```
+    brew install docker docker-machine
+    ```
+    
+    Install VirtualBox
+    ```
+    brew install --cask virtualbox
+    ```
+    
+    ref. [macOSでDocker Desktopをアンインストールしてdocker\-cli \+ docker\-machineで動かすようにする \- その手の平は尻もつかめるさ](https://moznion.hatenadiary.com/entry/2021/09/01/112601)
+    
 
 17. Firebase CLI
 
     Install
     ```
-    $ npm install -g firebase-tools
+    npm install -g firebase-tools
     ```
 
     Check
     ```
-    $ firebase --version
-    4.2.1
+    firebase --version
     ```
 
     ref. [Firebase CLI リファレンス  \|  Firebase](https://firebase.google.com/docs/cli/?hl=ja)
@@ -471,25 +496,25 @@ Java, Android, iOS, Flutter, fastlane, git, GitHub, Python, Node.js, AWS, Fireba
 
     Install
     ```
-    $ brew install jq
+    brew install jq
     ```
 
 19. Vagrant
 
     VirtualBox Install
     ```
-    $ brew cask install virtualbox
+    brew cask install virtualbox
     ```
 
     vagrant
     ```
-    $ brew cask install vagrant
+    brew cask install vagrant
     ```
 
 20. Ruby with rbenv
     Install rbenv  
     ```
-    $ brew install rbenv ruby-build rbenv-communal-gems
+    brew install rbenv ruby-build rbenv-communal-gems
     ```
 
     Edit .bash_profile
