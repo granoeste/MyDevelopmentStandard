@@ -45,7 +45,7 @@ Java, Android, iOS, Flutter, fastlane, git, GitHub, Python, Node.js, AWS, Fireba
 
     Add path
     ```
-    echo 'export PATH=$HOME/.fastlane/bin:$PATH' >> ~/.bash_profile
+    echo 'export PATH=$HOME/.fastlane/bin:$PATH' >> ~/.zprofile
     ```
 
     Check
@@ -134,10 +134,10 @@ Java, Android, iOS, Flutter, fastlane, git, GitHub, Python, Node.js, AWS, Fireba
 
     Add path
     ```
-    echo 'export ANDROID_HOME=$HOME/Library/Android/sdk' >> ~/.bash_profile
-    echo 'export PATH=$ANDROID_HOME/tools:$PATH' >> ~/.bash_profile
-    echo 'export PATH=$ANDROID_HOME/tools/bin:$PATH' >> ~/.bash_profile
-    echo 'export PATH=$ANDROID_HOME/platform-tools/:$PATH' >> ~/.bash_profile
+    echo 'export ANDROID_HOME=$HOME/Library/Android/sdk' >> ~/.zprofile
+    echo 'export PATH=$ANDROID_HOME/tools:$PATH' >> ~/.zprofile
+    echo 'export PATH=$ANDROID_HOME/tools/bin:$PATH' >> ~/.zprofile
+    echo 'export PATH=$ANDROID_HOME/platform-tools/:$PATH' >> ~/.zprofile
     ```
 
     Install package with [sdkmanager](https://developer.android.com/studio/command-line/sdkmanager)
@@ -165,7 +165,7 @@ Java, Android, iOS, Flutter, fastlane, git, GitHub, Python, Node.js, AWS, Fireba
     
     Add path
     ```
-    echo 'export PATH=$HOME/Library/flutter/bin:$PATH' >> ~/.bash_profile
+    echo 'export PATH=$HOME/Library/flutter/bin:$PATH' >> ~/.zprofile
     ```
 
     Check
@@ -290,7 +290,7 @@ Java, Android, iOS, Flutter, fastlane, git, GitHub, Python, Node.js, AWS, Fireba
 
         Add Path
         ```
-        echo 'export PATH=$PATH:$HOME/.nodebrew/current/bin' >> ~/.bash_profile
+        echo 'export PATH=$PATH:$HOME/.nodebrew/current/bin' >> ~/.zprofile
         ```
 
     2. Node.js
@@ -328,7 +328,7 @@ Java, Android, iOS, Flutter, fastlane, git, GitHub, Python, Node.js, AWS, Fireba
 
         Initialize nodenv using bash_profile
         ```
-        echo 'eval "$(nodenv init -)"' >> ~/.bash_profile
+        echo 'eval "$(nodenv init -)"' >> ~/.zprofile
         ```
 
         Install 8.11.4 and use it
@@ -378,7 +378,7 @@ Java, Android, iOS, Flutter, fastlane, git, GitHub, Python, Node.js, AWS, Fireba
         
         Initialize pyenv using bash_profile
         ```
-        echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi\nexport PATH="~/.pyenv/bin:$PATH"' >> ~/.bash_profile
+        echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi\nexport PATH="~/.pyenv/bin:$PATH"' >> ~/.zprofile
         ```
 
         Install Python 2.7.15 and use it
@@ -419,7 +419,7 @@ Java, Android, iOS, Flutter, fastlane, git, GitHub, Python, Node.js, AWS, Fireba
 
         Add Path
         ```
-        $ echo 'export PATH=$PATH:$HOME/.local/bin' >> ~/.bash_profile
+        $ echo 'export PATH=$PATH:$HOME/.local/bin' >> ~/.zprofile
         ```
 
         ref. [pyenv/pyenv: Simple Python version management](https://github.com/pyenv/pyenv#installation)
