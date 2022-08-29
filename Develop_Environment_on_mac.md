@@ -141,6 +141,12 @@ Java, Android, iOS, Flutter, fastlane, git, GitHub, Python, Node.js, AWS, Fireba
     ```
 
     Install package with [sdkmanager](https://developer.android.com/studio/command-line/sdkmanager)
+
+    Add path
+    ```
+    echo 'export PATH=$ANDROID_HOME/cmdline-tools/latest/bin:$PATH' >> ~/.zprofile
+    ```
+
     ```
     sdkmanager --list
     ```
