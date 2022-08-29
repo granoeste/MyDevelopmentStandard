@@ -110,7 +110,7 @@ Java, Android, iOS, Flutter, fastlane, git, GitHub, Python, Node.js, AWS, Fireba
     
     Prepare
     ```
-    brew tap caskroom/versions
+     brew tap homebrew/cask-versions
     ```
     
     Install 
