@@ -107,11 +107,11 @@ Java, Android, iOS, Flutter, fastlane, git, GitHub, Python, Node.js, AWS, Fireba
     ```
 
 9.  Java
+
     [AdoptOpenJDK/homebrew\-openjdk: AdoptOpenJDK HomeBrew Tap](https://github.com/AdoptOpenJDK/homebrew-openjdk)
     
     Prepare
     ```
-    brew tap homebrew/cask-versions
     brew tap AdoptOpenJDK/openjdk
     ```
     
