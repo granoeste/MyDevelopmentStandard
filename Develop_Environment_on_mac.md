@@ -106,24 +106,27 @@ Java, Android, iOS, Flutter, fastlane, git, GitHub, Python, Node.js, AWS, Fireba
     pod setup
     ```
 
-9.  Java 8
+9.  Java
+    [AdoptOpenJDK/homebrew\-openjdk: AdoptOpenJDK HomeBrew Tap](https://github.com/AdoptOpenJDK/homebrew-openjdk)
     
     Prepare
     ```
-     brew tap homebrew/cask-versions
+    brew tap homebrew/cask-versions
+    brew tap AdoptOpenJDK/openjdk
     ```
     
     Install 
     ```
-    brew install --cask adoptopenjdk8  
+    brew install --cask adoptopenjdk11
     ```
+    
 
     Check
     ```
     $ java -version
-    openjdk version "1.8.0_212"
-    OpenJDK Runtime Environment (AdoptOpenJDK)(build 1.8.0_212-b03)
-    OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.212-b03, mixed mode)
+    openjdk version "11.0.11" 2021-04-20
+    OpenJDK Runtime Environment AdoptOpenJDK-11.0.11+9 (build 11.0.11+9)
+    OpenJDK 64-Bit Server VM AdoptOpenJDK-11.0.11+9 (build 11.0.11+9, mixed mode)
     ```
 
 10. Android Studio
