@@ -294,12 +294,12 @@ Java, Android, iOS, Flutter, fastlane, git, GitHub, Python, Node.js, AWS, Fireba
 
         Post Proccess
         ```
-        /usr/local/opt/nodebrew/bin/nodebrew setup_dirs
+        /opt/homebrew/opt/nodebrew/bin/nodebrew setup_dirs
         ```
 
         Add Path
         ```
-        echo 'export PATH=$PATH:$HOME/.nodebrew/current/bin' >> ~/.zprofile
+        echo 'export PATH=$HOME/.nodebrew/current/bin:$PATH' >> ~/.zprofile
         ```
 
     2. Node.js
