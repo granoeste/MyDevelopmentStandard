@@ -299,7 +299,7 @@ Java, Android, iOS, Flutter, fastlane, git, GitHub, Python, Node.js, AWS, Fireba
 
         Add Path
         ```
-        echo 'export PATH=$HOME/.nodebrew/current/bin:$PATH' >> ~/.zprofile
+        echo 'export PATH=$HOME/.nodebrew/default/bin:$PATH' >> ~/.zprofile
         ```
 
     2. Node.js
