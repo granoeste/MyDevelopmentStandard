@@ -278,6 +278,14 @@ Java, Android, iOS, Flutter, fastlane, git, GitHub, Python, Node.js, AWS, Fireba
 
     [Mac GitHub SSH接続設定 \- Qiita](https://qiita.com/ucan-lab/items/e02f2d3a35f266631f24)
 
+13. Github config
+
+    -　lias
+
+    ```
+    git config --global alias.pushf "Push --force-with-lease"
+    ```
+
 13. Node.js
 
     1. nodebrew
