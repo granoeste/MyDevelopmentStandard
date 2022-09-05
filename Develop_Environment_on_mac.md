@@ -280,7 +280,7 @@ Java, Android, iOS, Flutter, fastlane, git, GitHub, Python, Node.js, AWS, Fireba
 
 13. Github config
 
-    -　lias
+    alias
 
     ```
     git config --global alias.pushf "Push --force-with-lease"
