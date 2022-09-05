@@ -283,7 +283,7 @@ Java, Android, iOS, Flutter, fastlane, git, GitHub, Python, Node.js, AWS, Fireba
     alias
 
     ```
-    git config --global alias.pushf "Push --force-with-lease"
+    git config --global alias.pushf "push --force-with-lease"
     ```
 
 13. Node.js
